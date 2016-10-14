@@ -1,0 +1,74 @@
+﻿@model EventProjekt.Models.Contacts
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="content">
+
+       
+            <div class="form-horizontal" aria-describedby="helpBlock">
+                <h3>Rediger Kontakt</h3>
+                <br />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="form-group">
+                  
+                        @Html.LabelFor(model => model.Navn, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Navn, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Navn, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.EfterNavn, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.EfterNavn, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.EfterNavn, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.Adresse, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Adresse, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Adresse, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.Postnummer, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Postnummer, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Postnummer, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.Bynavn, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Bynavn, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Bynavn, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.Tlf, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Tlf, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Tlf, "", new { @class = "text-danger" })
+
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                       
+                        <br />
+                        <br />
+                        <input type="submit" value="Gem" class="btn btn-default" />
+                        <br />
+                        <br />
+
+
+            
+                </div>
+            </div>
+        </div>
+ 
+}

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<EventProjekt.Models.Event>
+@{
+    ViewBag.Title = "GetEventsByName";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+
+    <h3>Søge resultater</h3>
+    <br />
+
+    <div class="row">
+        @foreach (var s in Model)
+        {
+            <div class="col-md-4">
+
+                <img src="~/Content/images/@s.Image" class="img-responsive img-thumbnail" alt="Responsive image" width="300" />
+                <br />
+                <br />
+
+                <p><div class="beskrivelseSearch">@s.Beskrivelse</div></p>
+                <hr />
+                <span class="glyphicon glyphicon-map-marker DetailIcon" aria-hidden="true"></span> @s.Adresse<br />
+                <span class="glyphicon glyphicon-time DetailIcon" aria-hidden="true"></span> @s.EventStart - @s.EventEnd
+                <h5>@s.Navn</h5>
+            </div>
+        }
+    </div>
+
+</div>

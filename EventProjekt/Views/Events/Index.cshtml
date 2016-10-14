@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EventProjekt.Models.Event>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <h3>Events</h3>
+    <br />
+    <div class="row">
+       @foreach (var e in Model)
+       {
+            <div class="col-sm-3 EventBoks">
+                <div class="thumbnail">
+                    <img src="~/Content/images/@e.Image" class="img-responsive" alt="Responsive image" width="300"/>
+                </div>
+                <div class="caption">
+                    <div class="kategoriTekst">@e.Navn</div>
+                    <p><a href="@Url.Action("index", "Detail", new { id = e.Id })" class="btn btn-default ReadMore">Læs mere</a></p>
+                   
+                </div>
+
+            </div>
+        }       
+        </div>
+
+    </div>
+
+

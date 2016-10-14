@@ -1,0 +1,21 @@
+﻿@model EventProjekt.Models.About
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <h3>Om Aarhus Events</h3>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+
+            <p>
+                @Html.Raw(Model.Tekst.Replace("\n","<br />"))
+            </p>
+
+        </div>
+    </div>
+</div>

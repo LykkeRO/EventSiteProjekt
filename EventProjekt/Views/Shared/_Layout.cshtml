@@ -1,0 +1,119 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+
+  
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="~/Content/images/EventLogo.svg" width="150" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                    @using (Html.BeginForm("GetEventsByName", "Events", FormMethod.Post, new { @class = "navbar-form navbar-right" }))
+                    {
+                        <div class="form-group has-feedback">
+
+                            <input type="text" class="form-control" name="name" placeholder="skriv her hvad du søger" />
+                            <i class="glyphicon glyphicon-search search form-control-feedback"></i>
+                        </div>
+
+                        <button class="searchKnap">Søg</button>
+                    }
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="@Url.Action("index", "Home")">Forside</a></li>
+                        <li><a href="@Url.Action("index", "Events")">Events</a></li>
+                        <li><a href="@Url.Action("index", "Nyheds")">Nyheder</a></li>
+                        <li><a href="@Url.Action("index", "Abouts")">Om Aarhus events</a></li>
+                        <li><a href="@Url.Action("index", "Contact")">Kontakt</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div>
+            @RenderBody()
+        </div>
+
+
+        <div class="push"></div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row footerIndhold">
+                <div class="col-md-3">
+                    <p>
+                        <b>Kontakt</b><br />
+                        Hans Hansen<br />
+                        Kulsøvej 12<br />
+                        8000 - Aarhus C
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <b>Sociale medier</b><br />
+                        Facebook<br />
+                        Instagram<br />
+                        Twitter
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <b>Spørgsmål og svar</b><br />
+                        Priser<br />
+                        Aldersgrænser<br />
+                        Studiekort
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+
+                        <br />
+                        <a class="LoginKnap" href="#" role="button" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    @Html.Partial("LoginPartial", new EventProjekt.Models.LoginViewModel())
+
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+   
+    <script src="~/Scripts/ModalScript.js"></script>
+    
+    <script src="~/Scripts/SliderScript.js"></script>
+ 
+
+    @RenderSection("scripts", false)
+</body>
+
+</html>

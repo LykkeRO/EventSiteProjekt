@@ -1,0 +1,96 @@
+﻿@model EventProjekt.Models.Event
+
+@{
+    ViewBag.Title = "Edit";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm("Edit", "Events", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="content">
+        <div class="row">
+            <div class="form-horizontal">
+                <h3>Redigere Event</h3>
+             <br />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Navn, htmlAttributes: new { @class = "control-label col-md-0" })
+
+                        @Html.EditorFor(model => model.Navn, new { htmlAttributes = new { @class = "form-control"} })
+                        @Html.ValidationMessageFor(model => model.Navn, "", new { @class = "text-danger" })
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Beskrivelse, htmlAttributes: new { @class = "control-label col-md-0" })
+
+                        @Html.EditorFor(model => model.Beskrivelse, new { htmlAttributes = new { @class = "form-control", row = "10", column = "40" }})
+                        @Html.ValidationMessageFor(model => model.Beskrivelse, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EventStart, htmlAttributes: new { @class = "control-label col-md-0" })
+
+                        @Html.EditorFor(model => model.EventStart, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EventStart, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.EventEnd, htmlAttributes: new { @class = "control-label col-md-0" })
+
+                        @Html.EditorFor(model => model.EventEnd, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EventEnd, "", new { @class = "text-danger" })
+
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Pris, htmlAttributes: new { @class = "control-label col-md-0" })
+
+                        @Html.EditorFor(model => model.Pris, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Pris, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Adresse, htmlAttributes: new { @class = "control-label col-md-0" })
+                        <br />
+                        @Html.EditorFor(model => model.Adresse, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Adresse, "", new { @class = "text-danger" })
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="submit" value="Gem" class="btn btn-default" />
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                @if (Model.Image != null)
+                {
+                    <img src="~/Content/Images/@Model.Image" width="350" class="VisBillede" />
+                }
+                <br />
+                <br />
+                <input type="file" name="file" />
+                <br />
+                <div>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

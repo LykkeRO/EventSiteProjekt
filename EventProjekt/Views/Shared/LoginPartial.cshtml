@@ -1,0 +1,35 @@
+﻿@model EventProjekt.Models.LoginViewModel
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            @using (Html.BeginForm("Login", "Account"))
+            {
+                <div class="modal-body">
+                    @Html.ValidationSummary()
+                    <br />
+                    <div class="modal-body">
+                        @Html.LabelFor(p => p.UserName)
+                        @Html.EditorFor(p => p.UserName)
+
+                        @Html.LabelFor(p => p.Password)
+                        @Html.EditorFor(p => p.Password)
+                        <br />
+                        <br />
+                        @Html.LabelFor(p => p.RememberMe)
+                        @Html.EditorFor(p => p.RememberMe)
+                    </div>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Luk</button>
+                        <button type="submit" id="btnlogin" class="btn btn-primary Login">Login</button>
+
+                    </div>
+            }
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->

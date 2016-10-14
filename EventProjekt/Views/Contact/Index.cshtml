@@ -1,0 +1,60 @@
+﻿@model EventProjekt.Models.Contacts
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+
+    <h3>Kontakt</h3>
+    <br />
+    <section>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <p>For at kontakte os, kan du sende en mail herunder</p>
+                <br />
+                <address>
+                    <p>
+                        @Model.Navn @Model.EfterNavn<br />
+                        @Model.Adresse<br />
+                        @Model.Postnummer @Model.Bynavn<br />
+                        <abbr title="Phone">Mobil: </abbr>@Model.Tlf<br />
+                        Email: @Model.Email
+                    </p>
+                </address>
+
+            </div>
+            <div class="col-lg-8">
+                @using (Html.BeginForm())
+            {
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Navn)
+                        @Html.EditorFor(model => model.Navn, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email)
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Besked)
+                        @Html.EditorFor(model => model.Besked, new { htmlAttributes = new { @class = "form-control", row = "10", column = "40" } })
+                    </div>
+
+
+                    <button type="submit" class="btn btn-success contact">Send</button>
+                }
+            </div>
+
+        </div> <!--end row-->
+    </section>
+
+
+</div>

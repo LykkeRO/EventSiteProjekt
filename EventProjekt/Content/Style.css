@@ -1,0 +1,455 @@
+﻿body {
+    font-family: Tahoma,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5 {
+    font-size: 12px;
+    color: #44b589;
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -140px;
+}
+
+.footer,
+.push {
+    height: 139px;
+}
+
+/*stickey footer-------------------------------- */
+label {
+    font-weight: lighter;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: none;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #44b589;
+    border-color: #44b589;
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+
+.navbar-default .navbar-collapse {
+    border: none;
+}
+
+.navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-left {
+    float: left !important;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+/*Nav bar end-------------------------------- */
+
+.HomeSlider {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#slider {
+    height: 792px;
+    overflow: hidden;
+}
+
+    #slider .slider-item {
+        width: 100%;
+        position: relative;
+    }
+
+        #slider .slider-item .image {
+        }
+
+        #slider .slider-item .kategoriTekst {
+            position: absolute;
+            width: 100%;
+            height: 500px;
+        }
+
+            #slider .slider-item .kategoriTekst h1 {
+                font-size: 40px;
+                color: white;
+                font-family: Tahoma,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #44b589;
+                font-weight: lighter;
+                text-align: center;
+                padding-top: 297px;
+            }
+
+
+.slide {
+    min-height: 300px;
+}
+
+.carousel-control.left {
+    background: none;
+}
+
+.carousel-control.right {
+    background: none;
+}
+
+
+/*Forside slider  end-------------------------------- */
+
+
+.EventSiteImage {
+    max-width: 100%;
+}
+
+.EventTekst h2 {
+    margin-top: -4px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.EventTekst h5 {
+    color: #44b589;
+}
+
+.btn-default-Event {
+    color: #383838;
+    margin-top: 30px;
+    background-color: #44b589;
+}
+
+.EventBoks {
+    margin-bottom: 20px;
+    height: 300px;
+    padding: 10px;
+}
+
+.ReadMore {
+    background-color: #44b589;
+    margin-top: 6px;
+    width: 304px;
+}
+
+.Event {
+    border: solid 1px black;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    display: inline-block;
+    margin-left: -3px;
+}
+
+.kategoriTekst {
+    color: #44b589;
+    font-size: 14px;
+    padding-left: 4px;
+}
+/*Event end---------------------------------- */
+
+
+.kontaktTekst {
+    padding-top: 25px;
+}
+
+.KontaktKnap {
+    border: solid 1px #44b589;
+}
+
+.KontaktForm {
+    border: solid 1px #44b589;
+}
+
+.kontakt {
+    border: 1px #44b589 solid;
+}
+
+
+.contact {
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*kontakt end -------------------------------- */
+
+.NyhedsKnap {
+    background-color: #44b589;
+    color: white;
+}
+
+.NyhedsTekst p {
+    padding-top: 20px;
+}
+
+.BeskrivelseNyheds {
+    min-height: 40px;
+}
+
+.NyhedsBoks {
+    margin-bottom: 20px;
+}
+
+.NyhedKategoriTekst {
+    color: #44b589;
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+
+/*Nyheder end ---------------------------------- */
+
+.DetajleSide {
+    margin-top: 30px;
+}
+
+    .DetajleSide h5 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #383838;
+        margin-top: 50px;
+    }
+
+#DetaljeImage {
+    height: 300px;
+    overflow: hidden;
+}
+
+.Detail {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.DetailImage {
+    height: 470px;
+    overflow: hidden;
+}
+
+    .DetailImage img {
+        transform: translateY(-37%);
+    }
+
+.DetailIcon {
+    color: darkgray;
+}
+
+.infoDetail {
+    padding-bottom: 20px;
+}
+
+
+
+/*Detaljeside end ------------------------------- */
+
+
+.loginknap {
+    color: white;
+    width: 70px;
+    font-size: 12px;
+}
+
+
+
+.glyphicon-user {
+    font-size: 35px;
+    top: 7px;
+    left: 5px;
+    color: white;
+}
+
+
+
+.searchFelt {
+    display: inline;
+    font-size: 13px;
+    width: 700px;
+    border-radius: 30px;
+}
+
+a:hover {
+    color: #44b589;
+    text-decoration: none;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 9px;
+}
+
+
+.searchKnap {
+    border: none;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    color: whitesmoke;
+    width: 50px;
+    background-color: #4a7866;
+    top: 4px;
+}
+
+.glyphicon-search {
+    color: #44b589;
+    font-size: 14px;
+}
+
+.footerIndhold {
+    margin-left: -71px;
+}
+
+footer {
+    background-color: #44b589;
+    min-height: 140px;
+    text-align: justify;
+    padding-top: 30px;
+    color: white;
+    margin: auto;
+    padding-left: 50px;
+}
+
+    footer p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+/*footer end -------------------------------- */
+
+
+.beskrivelseSearch {
+    min-height: 60px;
+}
+
+/*Search End*/
+
+
+
+.Login {
+    background-color: #44b589;
+    color: white;
+}
+/*Login End*/
+
+
+a {
+    color: white;
+    background-color: none;
+}
+
+
+
+.caption {
+    height: 200px;
+}
+
+
+
+
+@media(min-width: 768px) {
+
+    .navbar-right {
+        float: right !important;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    ul.navbar-right {
+        float: right !important;
+        padding-top: 20px;
+        padding-right: -141px;
+    }
+
+    .glyphicon-search {
+        color: #44b589;
+        font-size: 14px;
+        top: 7px;
+    }
+    /*Navbar End*/
+
+    .contact {
+        padding-left: 9px;
+        width: 50px;
+    }
+    /*Contact End*/
+
+    .footer p {
+        padding-left: 115px;
+    }
+
+    .footerIndhold {
+        margin-left: 66px;
+    }
+
+    .kategoriTekst {
+        color: #44b589;
+        font-size: 14px;
+    }
+
+    .ReadMore {
+        background-color: #44b589;
+        margin-top: 15px;
+        margin-left: -2px;
+        width: 100px;
+    }
+
+    .thumbnail {
+        margin-left: -6px;
+    }
+
+
+    /*Event Kategoritekst End*/
+
+
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+
+
+    .carousel-inner {
+        height: 723px;
+    }
+}

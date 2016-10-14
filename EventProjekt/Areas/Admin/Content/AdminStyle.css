@@ -1,0 +1,379 @@
+﻿body {
+    font-family: Tahoma,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.table-responsive{
+    border: none; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.row{
+    margin:0; 
+}
+.wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 283px;
+}
+
+/*stickey footer-------------------------------- */
+
+
+.content{
+    width:100%;  
+   margin-left:-53px; 
+}
+
+/*Nav bar end-------------------------------- */
+
+#slider {
+    height: 792px;
+    overflow: hidden;
+}
+
+    #slider .slider-item {
+        width: 100%;
+        position: relative;
+    }
+
+        #slider .slider-item .image {
+        }
+
+        #slider .slider-item .kategoriTekst {
+            position: absolute;
+            width: 100%;
+            height: 500px;
+        }
+
+            #slider .slider-item .kategoriTekst h1 {
+                font-size: 40px;
+                color: white;
+                font-family: Tahoma,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #44b589;
+                font-weight: lighter;
+                text-align: center;
+                padding-top: 297px;
+            }
+
+/*Forside slider  end-------------------------------- */
+
+
+.EventSiteImage {
+    max-width: 100%;
+}
+
+.EventTekst h2 {
+    margin-top: -4px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.EventTekst h5 {
+    color: #44b589;
+}
+
+.btn-default-Event {
+    color: #383838;
+    margin-top: 30px;
+    background-color: #44b589;
+}
+
+/*Event end---------------------------------- */
+
+
+.kontaktTekst {
+    padding-top: 25px;
+}
+
+.KontaktKnap {
+    width: 100%;
+    border: solid 1px #44b589;
+}
+
+.KontaktForm {
+    border: solid 1px #44b589;
+}
+
+/*kontakt end -------------------------------- */
+
+.NyhedsKnap {
+    background-color: #44b589;
+    color: white;
+}
+
+.NyhedsTekst p {
+    padding-top: 20px;
+}
+
+
+/*Nyheder end ---------------------------------- */
+
+.DetajleSide {
+    margin-top: 30px;
+}
+
+    .DetajleSide h5 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #383838;
+        margin-top: 50px;
+    }
+
+#DetaljeImage {
+    height: 300px;
+    overflow: hidden;
+}
+
+/*Detaljeside end ------------------------------- */
+
+
+.LoginKnap {
+    color: white;
+    width: 70px;
+    border: solid 1px #44b589;
+    font-size: 12px;
+}
+
+
+
+.glyphicon-user {
+    font-size: 30px;
+    top: 7px;
+    left: 5px;
+}
+
+.searchFelt {
+    display: inline;
+    font-size: 13px;
+    width: 700px;
+    border-radius: 30px;
+}
+
+.searchKnap {
+    border: solid 1px whitesmoke;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #44b589;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    top: 4px;
+}
+
+.glyphicon-search {
+    color: white;
+    font-size: 20px;
+    top: 7px;
+}
+
+.footerIndhold {
+    margin-left: 66px;
+}
+
+footer {
+    background-color: orange;
+    min-height: 180px;
+    text-align: justify;
+    padding-top: 30px;
+    color: white;
+    margin: auto;
+    padding-left: 50px;
+}
+
+    footer p {
+        padding-left: 224px;
+    }
+/*footer end -------------------------------- */
+
+
+
+table tr td.Actions {
+    min-width: 175px;
+}
+
+table tr td.Categories {
+    min-width: 200px;
+    float: right;
+}
+
+.nav-pills > li > a {
+    border-radius: 0;
+    color: darkgray;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+th {
+    color: orange;
+}
+
+aside.sidebar {
+    width: 15%;
+    background-color: orange;
+    height: 95vh;
+    float: left;
+    visibility: hidden;
+}
+
+.content {
+    width: 85%;
+    float: left;
+    padding-left: 80px;
+}
+
+
+.AdminNav {
+    padding-top: 80px;
+    border: solid 0px black;
+}
+
+.menupunkter {
+    background-color: white;
+    height: 60px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border: 0;
+}
+
+.VisBillede {
+    margin-top: 25px;
+}
+
+.AboutAction {
+    float: right;
+}
+
+/*-----------------------------------------*/
+
+
+.navbar-default {
+    background-color: orange;
+    border-color: orange;
+    min-height: 80px;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-collapse {
+    border: none !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.eventCon {
+    width: 300px;
+}
+
+
+@media(min-width: 768px) {
+.content{
+   
+   margin-left:-53px; 
+}
+
+    aside.sidebar {
+        width: 15%;
+        background-color: orange;
+        height: 95vh;
+        float: left;
+        visibility: visible;
+    }
+
+    label {
+        font-weight: lighter;
+    }
+
+
+
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-default {
+        background-color: orange;
+        border-color: orange;
+        min-height: 80px;
+    }
+
+
+
+    .navbar-right {
+        float: right !important;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-left {
+        float: left !important;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    .btn {
+        border-radius: 0;
+    }
+}
+
+@media(min-width: 992px) {
+.content{
+margin-left: -61px;
+
+}
+
+.aside.sidebar{
+    width: 10%;
+    margin-left: 24px; 
+    margin-right: 5px; 
+ }
+
+    footer {
+        height: 100px;
+    }
+
+    .footer,
+    .push {
+        height: 5px;
+    }
+
+    .row{
+        margin:0; 
+    }
+}
