@@ -2,41 +2,48 @@
     font-family: Tahoma,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
 h3 {
     font-size: 25px;
     font-weight: bolder;
     padding-top: 30px;
 }
 
-.table-responsive{
-    border: none; 
+.table-responsive {
+    border: none;
 }
 
 html, body {
     height: 100%;
     margin: 0;
 }
-.row{
-    margin:0; 
+
+.row {
+    margin: 0;
 }
+
 .wrapper {
-    min-height: 100%;
+    height: auto;
     /* Equal to height of footer */
     /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -50px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
 }
 
 .footer,
 .push {
-    height: 283px;
+    height: auto;
 }
 
 /*stickey footer-------------------------------- */
 
 
-.content{
-    width:100%;  
-   margin-left:-53px; 
+.content {
+    width: 100%;
+
 }
 
 /*Nav bar end-------------------------------- */
@@ -198,9 +205,7 @@ footer {
     padding-left: 50px;
 }
 
-    footer p {
-        padding-left: 224px;
-    }
+  
 /*footer end -------------------------------- */
 
 
@@ -234,11 +239,6 @@ aside.sidebar {
     visibility: hidden;
 }
 
-.content {
-    width: 85%;
-    float: left;
-    padding-left: 80px;
-}
 
 
 .AdminNav {
@@ -295,15 +295,35 @@ aside.sidebar {
 
 
 @media(min-width: 768px) {
-.content{
+  
+    
+    .content {
+        width: 85%;
+
+    }
+
    
-   margin-left:-53px; 
-}
+    .wrapper {
+        height: auto;
+        height: auto;
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -100px;
+    }
+
+    .footer,
+    .push {
+        height: 100px;
+    }
+
 
     aside.sidebar {
         width: 15%;
         background-color: orange;
-        height: 95vh;
+        height: 100vh;
         float: left;
         visibility: visible;
     }
@@ -353,27 +373,32 @@ aside.sidebar {
 }
 
 @media(min-width: 992px) {
-.content{
-margin-left: -61px;
 
-}
+      .content {
+        float:left;
+    }
+    .wrapper {
+        height: auto;
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -100px;
+    }
 
-.aside.sidebar{
-    width: 10%;
-    margin-left: 24px; 
-    margin-right: 5px; 
- }
+
+    .aside.sidebar {
+        width: 10%;
+        margin-left: 24px;
+        margin-right: 5px;
+    }
 
     footer {
         height: 100px;
     }
 
-    .footer,
-    .push {
-        height: 5px;
-    }
-
-    .row{
-        margin:0; 
+    .row {
+        margin: 0;
     }
 }

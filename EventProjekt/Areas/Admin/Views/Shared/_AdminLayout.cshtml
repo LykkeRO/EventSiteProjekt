@@ -8,7 +8,7 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Areas/Admin/Content/AdminStyle.css" rel="stylesheet" />
 
-   
+
 
     <title>@ViewBag.Title</title>
 </head>
@@ -53,47 +53,47 @@
         </nav>
 
 
-    
-
-            <aside class="sidebar visible-lg">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="navbar-brand" href="#"><img src="~/Content/images/EventLogo.svg" width="150" /></a>
-                        <nav class="AdminNav">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="@Url.Action("Index", "Events")" class="menupunkter">Events</a></li>
-                                <li><a href="@Url.Action("Index", "Categories")" class="menupunkter">Kategorier</a></li>
-                                <li><a href="@Url.Action("Index", "Abouts")" class="menupunkter">About</a></li>
-                                <li><a href="@Url.Action("Index", "Contacts")" class="menupunkter">Kontakt</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
 
 
-            </aside>
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        @RenderBody()
-                    </div>
+        <aside class="sidebar visible-lg">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="navbar-brand" href="#"><img src="~/Content/images/EventLogo.svg" width="150" /></a>
+                    <nav class="AdminNav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="@Url.Action("Index", "Events")" class="menupunkter">Events</a></li>
+                            <li><a href="@Url.Action("Index", "Categories")" class="menupunkter">Kategorier</a></li>
+                            <li><a href="@Url.Action("Index", "Abouts")" class="menupunkter">About</a></li>
+                            <li><a href="@Url.Action("Index", "Contacts")" class="menupunkter">Kontakt</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
+
+        </aside>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    @RenderBody()
+                </div>
+            </div>
         </div>
 
         <div class="push"></div>
-   
+    </div>
+
+
     <footer class="">
         <div class="row">
-     <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
             <div class="col-md-3">
                 <p>
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                     <br />
                     <a class="LoginKnap" href="@Url.Action("Logout", "Account", new { area = "" })" role="button">Log ud</a>
                 </p>
-                
+
             </div>
 
             <div class="col-md-3"></div>
